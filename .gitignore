@@ -1,0 +1,5 @@
+open_weather_key
+MPC_readme.md
+venv/
+.files/
+.chainlit/
