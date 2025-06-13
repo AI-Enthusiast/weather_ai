@@ -15,10 +15,9 @@ async def main(message: cl.Message):
             if resp.status != 200:
                 await cl.Message(content=f"Error: {data.get('error', 'Unknown error')}").send()
                 return
-            weather = data["weather"]
-            temp = data["temperature"]
-            humidity = data["humidity"]
+            print(data.keys())
+            weather = data["ai_response"]
             await cl.Message(
-                content=f"Weather in {city}: {weather}, {temp}°C, Humidity: {humidity}%"
+                content=weather
             ).send()
 
