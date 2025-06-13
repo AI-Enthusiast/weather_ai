@@ -3,3 +3,4 @@ MPC_readme.md
 venv/
 .files/
 .chainlit/
+.idea/
